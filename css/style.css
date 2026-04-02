@@ -32,6 +32,26 @@ header .brand-shop h3 {
 header nav a {
   font-family: "poppins", sans-serif;
   color: var(--two-color);
+  position: relative;
+}
+
+/* underline navigasi */
+header nav a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--two-color);
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+header nav a:hover::before {
+  transform: scale(1);
 }
 
 /* hero */
@@ -55,11 +75,21 @@ header nav a {
   font-family: "poppins", sans-serif;
   color: var(--two-color);
   text-shadow: 0 2px 1px var(--four-color);
+  transition-delay: 0.2s;
 }
 
 .hero .row .left .btn {
   background-color: var(--one-color);
-  color: var(--teo-color);
+  color: var(--two-color);
+  border-color: var(--one-color) !important;
+  transition-delay: 0.4s;
+}
+
+/* btn ketika dihover */
+.hero .row .left .btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff !important;
 }
 
 /* right */
@@ -68,6 +98,7 @@ header nav a {
   width: 500px;
   height: 300px;
   background-color: yellow;
+  transition-delay: 0.2s;
 }
 
 /* arrow */
@@ -83,10 +114,12 @@ header nav a {
 .hero .arrow a {
   color: var(--two-color);
   font-family: "poppins", sans-serif;
+  transition-delay: 0.6s;
 }
 
 .hero .arrow a svg {
   animation: upAndDown 1.3s ease-in-out infinite;
+  transition-delay: 0.8s;
 }
 
 /* tentang */
@@ -101,6 +134,7 @@ header nav a {
 
 .tentang p {
   font-family: "poppins", sans-serif;
+  transition-delay: 0.2s;
 }
 
 /* star */
@@ -127,6 +161,7 @@ header nav a {
   left: 30px;
   top: 30px;
   transform: rotate(-6.19deg);
+  transition-delay: 0.6s;
 }
 
 /* img 2 */
@@ -134,6 +169,7 @@ header nav a {
   position: absolute;
   left: 250px;
   top: 135px;
+  transition-delay: 0.8s;
 }
 
 /* img 3 */
@@ -142,6 +178,7 @@ header nav a {
   right: 350px;
   top: 45px;
   transform: rotate(7.25deg);
+  transition-delay: 1.2s;
 }
 
 /* img 4 */
@@ -150,6 +187,7 @@ header nav a {
   right: 60px;
   top: 110px;
   transform: rotate(-9.19deg);
+  transition-delay: 1.4s;
 }
 
 /* layout star */
@@ -160,6 +198,7 @@ header nav a {
   top: 210px;
   transform: rotate(-18.18deg);
   z-index: 2;
+  transition-delay: 0.4s;
 }
 
 /* star 2 */
@@ -169,6 +208,7 @@ header nav a {
   top: 100px;
   transform: rotate(-13.13deg);
   z-index: 2;
+  transition-delay: 1s;
 }
 
 /* star 3 */
@@ -178,6 +218,7 @@ header nav a {
   top: 235px;
   transform: rotate(15.38deg);
   z-index: 2;
+  transition-delay: 1.6s;
 }
 
 /* star 4 */
@@ -187,6 +228,7 @@ header nav a {
   top: 50px;
   transform: rotate(-7.79deg);
   z-index: 2;
+  transition-delay: 1.8s;
 }
 
 /* bg image height */
@@ -223,6 +265,51 @@ header nav a {
   height: 250px;
   background-color: orange;
   box-shadow: 8px 12px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* transtion delay */
+/* produk 1 */
+.produk .produk-container .produk-item:nth-child(1) .col h3 {
+  transition-delay: 0.3s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col p {
+  transition-delay: 0.5s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col .image {
+  transition-delay: 0.3s;
+}
+
+/* produk 2 */
+.produk .produk-container .produk-item:nth-child(1) .col h3 {
+  transition-delay: 0.8s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col p {
+  transition-delay: 1s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col .image {
+  transition-delay: 0.8s;
+}
+
+/* produk 3 */
+.produk .produk-container .produk-item:nth-child(1) .col h3 {
+  transition-delay: 1.1s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col p {
+  transition-delay: 1.3s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col .image {
+  transition-delay: 1.1s;
+}
+
+/* produk 4 */
+.produk .produk-container .produk-item:nth-child(1) .col h3 {
+  transition-delay: 1.4s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col p {
+  transition-delay: 1.6s;
+}
+.produk .produk-container .produk-item:nth-child(1) .col .image {
+  transition-delay: 1.4s;
 }
 
 /* order */
@@ -263,11 +350,17 @@ header nav a {
 
 .order .list-order .list-order-item .item .nama-item {
   position: absolute;
-  top: -50px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--two-color);
   color: var(--one-color);
+  transition: top 0.3s ease-in-out;
+}
+
+/* transition nama item ketika dihover */
+.order .list-order .list-order-item .item:hover .nama-item {
+  top: -50px;
 }
 
 /* cta */
@@ -297,8 +390,15 @@ header nav a {
 .cta .row .nav-menu .link a {
   font-family: "poppins", sans-serif;
   color: var(--two-color);
+  transition: color 0.3s ease;
 }
 
+/* ubah warna ketika a dihover */
+.cta .row .nav-menu a:hover {
+  color: var(--one-color);
+}
+
+/* kontak */
 .cta .row .kontak h2 {
   font-family: "montserrat", sans-serif;
 }
@@ -349,4 +449,41 @@ footer p {
   100% {
     transform: translateY(10px);
   }
+}
+
+/* fade */
+/*  fade up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* fade left */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease;
+}
+
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* fade right */
+.fade-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0px);
 }

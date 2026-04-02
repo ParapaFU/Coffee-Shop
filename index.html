@@ -45,23 +45,25 @@
         <!-- brand-shop -->
       </div>
       <nav class="d-flex gap-5">
-        <a href="#" class="text-decoration-none fw-semibold">Beranda</a>
-        <a href="#" class="text-decoration-none fw-semibold">Tentang</a>
-        <a href="#" class="text-decoration-none fw-semibold">Produk</a>
-        <a href="#" class="text-decoration-none fw-semibold">Kontak</a>
+        <a href="#beranda" class="text-decoration-none fw-semibold">Beranda</a>
+        <a href="#tentang" class="text-decoration-none fw-semibold">Tentang</a>
+        <a href="#produk" class="text-decoration-none fw-semibold">Produk</a>
+        <a href="#kontak" class="text-decoration-none fw-semibold">Kontak</a>
       </nav>
     </header>
     <main>
-      <section class="hero container-fluid px-5 position-relative">
+      <section id="beranda" class="hero container-fluid px-5 position-relative">
         <div class="row d-flex align-items-center h-100">
           <div class="col left">
-            <h1 class="display-2 fw-bold">Temani Setiap Momen Santaimu.</h1>
-            <p>
+            <h1 class="display-2 fw-bold fade-up">
+              Temani Setiap Momen Santaimu.
+            </h1>
+            <p class="fade-up">
               Dari biji kopi pilihan hingga proses sangrai yang sempurna, setiap
               cangkir menghadirkan pengalaman yang cocok untuk menikmati waktu
               santai Kamu.
             </p>
-            <button class="btn border border-0 rounded-5 py-2 px-4 fw-semibold">
+            <button class="btn border rounded-5 py-2 px-4 fw-semibold fade-up">
               Lihat Produk
             </button>
             <!-- col left -->
@@ -69,7 +71,7 @@
           <div
             class="col right d-flex justify-content-center align-items-center"
           >
-            <div class="image rounded-4 overflow-hidden">
+            <div class="image rounded-4 overflow-hidden fade-up">
               <img
                 src="img/hero-images.jpg"
                 class="w-100 h-100"
@@ -82,16 +84,16 @@
         </div>
         <div class="arrow">
           <a
-            href="#"
+            href="#tentang"
             class="d-flex flex-column justify-content-center align-items-center text-decoration-none"
           >
-            <p class="text-center fw-medium">Tentang Kami</p>
+            <p class="text-center fw-medium fade-up">Tentang Kami</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
               height="50"
               viewBox="0 0 1024 1024"
-              class="icon-arrow"
+              class="icon-arrow fade-up"
             >
               <path
                 fill="currentColor"
@@ -102,13 +104,13 @@
         </div>
         <!-- hero -->
       </section>
-      <section class="tentang container-fluid py-5">
+      <section id="tentang" class="tentang container-fluid py-5">
         <h2
-          class="fw-semibold text-center text-decoration-underline link-offset-2"
+          class="fw-semibold text-center text-decoration-underline link-offset-2 fade-up"
         >
           TENTANG KAMI
         </h2>
-        <p class="my-3 text-center fw-medium px-4">
+        <p class="my-3 text-center fw-medium px-4 fade-up">
           Kopi Senja itu awalnya dari hobi ngopi aja sebenarnya. Dulu sering
           nongkrong sore sambil coba berbagai kopi lokal. Lama-lama kepikiran,
           kenapa ga bikin brand sendiri yang fokus ke kopi lokal tapi tetap
@@ -123,7 +125,7 @@
         </p>
         <div class="images-and-stars position-relative">
           <div class="bg-image"></div>
-          <div class="star star-1">
+          <div class="star star-1 fade-up">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="70"
@@ -138,7 +140,7 @@
             </svg>
             <!-- star -->
           </div>
-          <div class="star star-2">
+          <div class="star star-2 fade-up">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="70"
@@ -153,7 +155,7 @@
             </svg>
             <!-- star -->
           </div>
-          <div class="star star-3">
+          <div class="star star-3 fade-up">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="70"
@@ -168,7 +170,7 @@
             </svg>
             <!-- star -->
           </div>
-          <div class="star star-4">
+          <div class="star star-4 fade-up">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="70"
@@ -183,12 +185,13 @@
             </svg>
             <!-- star -->
           </div>
-          <div class="image img-1 rounded-4 overflow-hidden">
+          <!-- images 1 -->
+          <div class="image img-1 rounded-4 overflow-hidden fade-up">
             <img src="img/images-1.jpg" class="w-100 h-100" alt="image" />
             <!-- image -->
           </div>
-          <!-- images -->
-          <div class="image img-2 rounded-4 overflow-hidden">
+          <!-- images 2 -->
+          <div class="image img-2 rounded-4 overflow-hidden fade-up">
             <img
               src="img/images-2.jpg"
               class="w-100 h-100 object-fit-cover"
@@ -196,13 +199,13 @@
             />
             <!-- image -->
           </div>
-          <!-- images -->
-          <div class="image img-3 rounded-4 overflow-hidden">
+          <!-- images 3 -->
+          <div class="image img-3 rounded-4 overflow-hidden fade-up">
             <img src="img/images-3.jpg" class="w-100 h-100" alt="image" />
             <!-- image -->
           </div>
-          <!-- images -->
-          <div class="image img-4 rounded-4 overflow-hidden">
+          <!-- images 4 -->
+          <div class="image img-4 rounded-4 overflow-hidden fade-up">
             <img
               src="img/images-4.jpg"
               class="w-100 h-100 object-fit-cover"
@@ -214,9 +217,9 @@
         </div>
         <!-- tentang -->
       </section>
-      <section class="produk container-fluid py-5">
+      <section id="produk" class="produk container-fluid py-5">
         <h2
-          class="fw-semibold text-center text-decoration-underline link-offset-2"
+          class="fw-semibold text-center text-decoration-underline link-offset-2 fade-up"
         >
           PRODUK KAMI
         </h2>
@@ -224,7 +227,7 @@
           <!-- item 1 -->
           <div class="row produk-item my-5">
             <div class="col d-flex justify-content-center align-items-center">
-              <div class="image rounded-4 overflow-hidden">
+              <div class="image rounded-4 overflow-hidden fade-left">
                 <img
                   src="img/arabica-gayo.jpg"
                   class="w-100 h-100"
@@ -234,8 +237,8 @@
               <!-- col  -->
             </div>
             <div class="col d-flex flex-column justify-content-center pe-5">
-              <h3 class="text-start fw-semibold">Arabica Gayo</h3>
-              <p class="text-start fw-medium">
+              <h3 class="text-start fw-semibold fade-right">Arabica Gayo</h3>
+              <p class="text-start fw-medium fade-right">
                 Kopi Premium dari Dataran Tinggi Gayo, Aceh, yang terkenal
                 dengan kualitasnya di dunia. Memiliki aroma harum dengan cita
                 rasa seimbang, sedikit nuansa cokelat dan karamel, serta
@@ -249,8 +252,8 @@
           <!-- item 2 -->
           <div class="row produk-item my-5">
             <div class="col d-flex flex-column justify-content-center pe-5">
-              <h3 class="text-end fw-semibold">Toraja Kolasi</h3>
-              <p class="text-end fw-medium">
+              <h3 class="text-end fw-semibold fade-left">Toraja Kolasi</h3>
+              <p class="text-end fw-medium fade-left">
                 Kopi yang berasal dari pegunungan Toraja, Sulawesi Selatan, yang
                 terkenal menghasilkan kopi berkualitas tinggi. Kopi ini memiliki
                 body yang kuat dengan rasa kaya, sentuhan cokelat gelap dan
@@ -261,7 +264,7 @@
               <!-- col -->
             </div>
             <div class="col d-flex justify-content-center align-items-center">
-              <div class="image rounded-4 overflow-hidden">
+              <div class="image rounded-4 overflow-hidden fade-right">
                 <img
                   src="img/toraja-kolasi.jpg"
                   class="w-100 h-100 object-fit-cover"
@@ -275,7 +278,7 @@
           <!-- item 3 -->
           <div class="row produk-item my-5">
             <div class="col d-flex justify-content-center align-items-center">
-              <div class="image rounded-4 overflow-hidden">
+              <div class="image rounded-4 overflow-hidden fade-left">
                 <img
                   src="img/kintamani-bali.jpg"
                   class="w-100 h-100"
@@ -285,8 +288,8 @@
               <!-- col  -->
             </div>
             <div class="col d-flex flex-column justify-content-center pe-5">
-              <h3 class="text-start fw-semibold">Kintamani Bali</h3>
-              <p class="text-start fw-medium">
+              <h3 class="text-start fw-semibold fade-right">Kintamani Bali</h3>
+              <p class="text-start fw-medium fade-right">
                 Kopi yang berasal dari dataran tinggi Kintamani di Bali. Kopi
                 ini dikenal dengan karakter yang segar dengan kesamaan ringan
                 serta sentuhan aroma buah dan citrus. Profil rasanya yang bersih
@@ -300,8 +303,8 @@
           <!-- item 4 -->
           <div class="row produk-item my-5">
             <div class="col d-flex flex-column justify-content-center pe-5">
-              <h3 class="text-end fw-semibold">House Blend Senja</h3>
-              <p class="text-end fw-medium">
+              <h3 class="text-end fw-semibold fade-left">House Blend Senja</h3>
+              <p class="text-end fw-medium fade-left">
                 Racikan kopi spesial yang memadukan beberapa biji arabika
                 pilihan untuk menciptakan rasa yang seimbang dan lembut.
                 Memiliki aroma hangat dan sentuhan cokelat karamel, body yang
@@ -311,7 +314,7 @@
               <!-- col -->
             </div>
             <div class="col d-flex justify-content-center align-items-center">
-              <div class="image rounded-4 overflow-hidden">
+              <div class="image rounded-4 overflow-hidden fade-right">
                 <img
                   src="img/haouse-blend-senja.jpg"
                   class="w-100 h-100 object-fit-cover"
@@ -328,7 +331,7 @@
       </section>
       <section class="order container-fluid py-5">
         <h2
-          class="fw-semibold text-center text-decoration-underline link-offset-2"
+          class="fw-semibold text-center text-decoration-underline link-offset-2 fade-up"
         >
           ORDER NOW
         </h2>
@@ -340,7 +343,7 @@
             >
               <a
                 href="#"
-                class="item d-flex flex-column text-decoration-none position-relative"
+                class="item d-flex flex-column text-decoration-none position-relative fade-up"
               >
                 <!-- nama item -->
                 <div class="nama-item w-75 rounded-4">
@@ -370,6 +373,7 @@
                       />
                     </svg>
                   </p>
+                  <!-- link order -->
                 </div>
               </a>
               <!-- col -->
@@ -380,7 +384,7 @@
             >
               <a
                 href="#"
-                class="item d-flex flex-column text-decoration-none position-relative"
+                class="item d-flex flex-column text-decoration-none position-relative fade-up"
               >
                 <!-- nama item -->
                 <div class="nama-item w-75 rounded-4">
@@ -410,6 +414,7 @@
                       />
                     </svg>
                   </p>
+                  <!-- link order -->
                 </div>
               </a>
               <!-- col -->
@@ -420,7 +425,7 @@
             >
               <a
                 href="#"
-                class="item d-flex flex-column text-decoration-none position-relative"
+                class="item d-flex flex-column text-decoration-none position-relative fade-up"
               >
                 <!-- nama item -->
                 <div class="nama-item w-75 rounded-4">
@@ -450,6 +455,7 @@
                       />
                     </svg>
                   </p>
+                  <!-- link order -->
                 </div>
               </a>
               <!-- col -->
@@ -460,7 +466,7 @@
             >
               <a
                 href="#"
-                class="item d-flex flex-column text-decoration-none position-relative"
+                class="item d-flex flex-column text-decoration-none position-relative fade-up"
               >
                 <!-- nama item -->
                 <div class="nama-item w-75 rounded-4">
@@ -490,6 +496,7 @@
                       />
                     </svg>
                   </p>
+                  <!-- link order -->
                 </div>
               </a>
               <!-- col -->
@@ -499,11 +506,11 @@
         </div>
         <!-- order -->
       </section>
-      <section class="cta container-fluid">
+      <section id="kontak" class="cta container-fluid">
         <div class="row">
           <div class="col nav-menu p-0 border-end py-4">
             <div
-              class="brand-shop d-flex align-items-center justify-content-center"
+              class="brand-shop d-flex align-items-center justify-content-center fade-up"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -526,18 +533,18 @@
             </div>
             <div class="link d-flex flex-column my-4">
               <a
-                href="#"
-                class="py-3 fs-3 border-top d-flex align-items-center ps-4 text-decoration-none fw-semibold"
+                href="#beranda"
+                class="py-3 fs-3 border-top d-flex align-items-center ps-4 text-decoration-none fw-semibold fade-up"
                 >Beranda</a
               >
               <a
-                href="#"
-                class="py-3 fs-3 border-top border-bottom ps-4 text-decoration-none fw-semibold"
+                href="#tentang"
+                class="py-3 fs-3 border-top border-bottom ps-4 text-decoration-none fw-semibold fade-up"
                 >Produk</a
               >
               <a
-                href="#"
-                class="py-3 fs-3 border-bottom ps-4 text-decoration-none fw-semibold"
+                href="#produk"
+                class="py-3 fs-3 border-bottom ps-4 text-decoration-none fw-semibold fade-up"
                 >Tentang</a
               >
             </div>
@@ -545,11 +552,11 @@
           </div>
           <div class="col kontak py-4">
             <h2
-              class="text-center fw-semibold text-decoration-underline link-offset-2"
+              class="text-center fw-semibold text-decoration-underline link-offset-2 fade-up"
             >
               KONTAK KAMI
             </h2>
-            <form class="d-flex flex-column m-5 p-4">
+            <form class="d-flex flex-column m-5 p-4 fade-up">
               <!-- username -->
               <div class="form-item position-relative mb-2">
                 <label
@@ -614,7 +621,7 @@
       </section>
     </main>
     <footer class="d-flex justify-content-center align-items-center py-3">
-      <p class="copyright d-flex align-items-center fw-semibold m-0">
+      <p class="copyright d-flex align-items-center fw-semibold m-0 fade-up">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -626,7 +633,7 @@
             d="M10 16h4q.425 0 .713-.288T15 15v-2h-2v1h-2v-4h2v1h2V9q0-.425-.288-.712T14 8h-4q-.425 0-.712.288T9 9v6q0 .425.288.713T10 16m2 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
           />
         </svg>
-        Copyright 2020 Kopi Senja
+        Copyright Parapa 2026 Kopi Senja
       </p>
     </footer>
     <!-- bootstrap -->
