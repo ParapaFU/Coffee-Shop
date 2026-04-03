@@ -403,11 +403,6 @@ header nav a:hover::before {
   font-family: "montserrat", sans-serif;
 }
 
-/* warna label */
-.cta .row .kontak form .form-item label {
-  color: var(--four-color);
-}
-
 /* outline input */
 .cta .row .kontak form .form-item input,
 .cta .row .kontak form .form-item textarea {
@@ -418,6 +413,34 @@ header nav a:hover::before {
 .cta .row .kontak form .form-item input:focus,
 .cta .row .kontak form .form-item textarea:focus {
   outline: none;
+  transition: all 0.5s ease;
+}
+
+/* warna label */
+.cta .row .kontak form .form-item label {
+  color: var(--four-color);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: larger;
+  transition: all 0.3s ease;
+}
+
+/* label comment */
+.cta .row .kontak form .form-item .comment {
+  top: 25%;
+}
+
+.cta .row .kontak form .form-item #comment:focus + label {
+  top: -10%;
+  font-size: small;
+}
+
+/* label berubah menjadi kecil ketika focus */
+.cta .row .kontak form .form-item input:focus + label {
+  top: 0;
+  font-size: small;
 }
 
 /* button */

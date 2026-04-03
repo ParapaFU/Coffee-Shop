@@ -18,18 +18,13 @@ function autoHeightHeader() {
 }
 
 // sistem deteksi fade up
-const observer = new IntersectionObserver(
-  (enteries) => {
-    enteries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  },
-);
+const observer = new IntersectionObserver((enteries) => {
+  enteries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
 
 // Event
 window.addEventListener("resize", autoHeightHeader);
