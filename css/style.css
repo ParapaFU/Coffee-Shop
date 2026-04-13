@@ -556,6 +556,10 @@ footer p {
 /* mobile */
 @media (max-width: 576px) {
   /* beranda */
+  .hero {
+    min-height: auto !important;
+  }
+
   .hero .row .right .image {
     width: 100%;
   }
