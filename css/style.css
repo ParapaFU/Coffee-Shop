@@ -65,7 +65,7 @@ header nav a:hover::before {
   right: 0;
   bottom: 0;
   background-color: var(--two-color);
-  z-index: 10;
+  z-index: 15;
 }
 
 .nav-menu-mobile .close .icon-close {
@@ -85,7 +85,7 @@ header nav a:hover::before {
   background-color: var(--four-color);
   color: #fff;
   border-radius: 50%;
-  z-index: 99;
+  z-index: 10;
   transition: bottom ease 0.3s;
 }
 
@@ -556,6 +556,8 @@ footer p {
 /* mobile */
 @media (max-width: 576px) {
   /* tentang */
+
+  /* icon ham pop up */
 
   /* image */
   .tentang .images-and-stars .img-2 {

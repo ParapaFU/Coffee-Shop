@@ -13,6 +13,10 @@ const fadeRight = document.querySelectorAll(".fade-right");
 const hamNav = document.querySelector(".icon-ham");
 // ham pop up
 const hamPopUp = document.querySelector(".ham-pop-up");
+// navigasi(mobile)
+const navMobile = document.querySelector(".nav-menu-mobile");
+// btn close(nav menu Mobile)
+const btnClose = document.querySelector(".close");
 
 // Function
 // responsive hero dan header
@@ -47,6 +51,24 @@ const observerPopUp = new IntersectionObserver(
 
 // Event
 window.addEventListener("resize", autoHeightHeader);
+
+// tombol nav(mobile)
+hamNav.addEventListener("click", (e) => {
+  console.log(e.target);
+  navMobile.classList.replace("d-none", "d-flex");
+});
+
+// tombol ham pop up nav(mobile)
+hamPopUp.addEventListener("click", (e) => {
+  console.log(e.target);
+  navMobile.classList.replace("d-none", "d-flex");
+});
+
+// tombol close nav(mobile)
+btnClose.addEventListener("click", (e) => {
+  console.log(e.target);
+  navMobile.classList.replace("d-flex", "d-none");
+});
 
 // Program
 // auto resize header/nav
