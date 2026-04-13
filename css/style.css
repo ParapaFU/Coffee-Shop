@@ -4,6 +4,7 @@
   --two-color: #7b542f;
   --three-color: #ff9d00;
   --four-color: #b6771d;
+  --set-nav-menu-mobile: 0px;
 
   /* height hero */
   --hero-height: 0px;
@@ -54,6 +55,44 @@ header nav a:hover::before {
   transform: scale(1);
 }
 
+/* nav-menu (mobile) */
+.nav-menu-mobile {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--two-color);
+  z-index: 10;
+}
+
+.nav-menu-mobile .close .icon-close {
+  color: #fff;
+}
+
+/* ham pop up */
+.ham-pop-up {
+  position: fixed;
+  right: 30px;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--four-color);
+  color: #fff;
+  border-radius: 50%;
+  z-index: 99;
+  transition: bottom ease 0.3s;
+}
+
+.ham-pop-up.show {
+  bottom: 30px;
+}
+
 /* hero */
 .hero {
   height: calc(100vh - var(--hero-height));
@@ -99,6 +138,7 @@ header nav a:hover::before {
   height: 300px;
   background-color: yellow;
   transition-delay: 0.2s;
+  box-shadow: 8px 12px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* arrow */
@@ -233,6 +273,7 @@ header nav a:hover::before {
 
 /* bg image height */
 .tentang .images-and-stars .bg-image {
+  width: 100%;
   height: 350px;
 }
 
@@ -509,4 +550,30 @@ footer p {
 .fade-right.show {
   opacity: 1;
   transform: translateX(0px);
+}
+
+/* media query */
+/* mobile */
+@media (max-width: 576px) {
+  /* tentang */
+
+  /* image */
+  .tentang .images-and-stars .img-2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* star 2 */
+  .tentang .images-and-stars .star-2 {
+    left: 0px;
+    top: 0px;
+  }
+
+  /* order */
+  /* transition nama item ketika dihover */
+  .order .list-order .list-order-item .item:hover .nama-item {
+    top: -40px;
+  }
 }

@@ -9,6 +9,10 @@ const fadeUp = document.querySelectorAll(".fade-up");
 const fadeLeft = document.querySelectorAll(".fade-left");
 // fade right
 const fadeRight = document.querySelectorAll(".fade-right");
+// ham nav
+const hamNav = document.querySelector(".icon-ham");
+// ham pop up
+const hamPopUp = document.querySelector(".ham-pop-up");
 
 // Function
 // responsive hero dan header
@@ -18,7 +22,7 @@ function autoHeightHeader() {
 }
 
 // sistem deteksi fade up
-const observer = new IntersectionObserver((enteries) => {
+const observerFade = new IntersectionObserver((enteries) => {
   enteries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
@@ -26,11 +30,32 @@ const observer = new IntersectionObserver((enteries) => {
   });
 });
 
+const observerPopUp = new IntersectionObserver(
+  (enteries) => {
+    enteries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        hamPopUp.classList.remove("show");
+      } else {
+        hamPopUp.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0,
+  },
+);
+
 // Event
 window.addEventListener("resize", autoHeightHeader);
 
 // Program
+// auto resize header/nav
 autoHeightHeader();
-fadeUp.forEach((e) => observer.observe(e));
-fadeLeft.forEach((e) => observer.observe(e));
-fadeRight.forEach((e) => observer.observe(e));
+
+// animasi masuk element
+fadeUp.forEach((e) => observerFade.observe(e));
+fadeLeft.forEach((e) => observerFade.observe(e));
+fadeRight.forEach((e) => observerFade.observe(e));
+
+// deteksi icon ham untuk memunculkan ham pop up
+observerPopUp.observe(hamNav);
