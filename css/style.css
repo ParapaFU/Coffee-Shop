@@ -95,7 +95,7 @@ header nav a:hover::before {
 
 /* hero */
 .hero {
-  height: calc(100vh - var(--hero-height));
+  min-height: calc(100vh - var(--hero-height));
   background-color: var(--three-color);
 }
 
@@ -555,7 +555,10 @@ footer p {
 /* media query */
 /* mobile */
 @media (max-width: 576px) {
-  /* tentang */
+  /* beranda */
+  .hero .row .right .image {
+    width: 100%;
+  }
 
   /* image */
   .tentang .images-and-stars .img-2 {
